@@ -12,7 +12,7 @@ ENV PYTHONUNBUFFERED=1
 # Install pip requirements
 COPY requirements.txt .
 RUN python -m pip install -r requirements.txt
-RUN apt-get install -y curl telnet vim
+RUN apt-get install -y curl
 
 WORKDIR /app
 COPY . /app
